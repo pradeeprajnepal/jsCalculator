@@ -1,0 +1,68 @@
+*, *::before,*::after{
+    box-sizing:border-box;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight:normal;
+}
+
+
+body{
+    padding:0;
+    margin:0;
+    background: linear-gradient(to right, #00AAff, #00FF6C);
+}
+
+.container-grid {
+    display:grid;
+    justify-content:center;
+    align-content:center;
+    min-height:100vh;  
+    grid-template-columns: repeat(4,80px);
+    grid-template-rows:minmax(100px,auto)repeat(5,80px);
+
+}
+
+.container-grid > button{
+    border: 1.5px solid white;
+    outline: none;
+    font-size: 1.8rem;
+    cursor: pointer;
+    background-color: rgba(255,255,255,.75)
+    
+}
+.container-grid > button:hover{
+    background-color: rgba(255,255,255,.9)
+}
+
+.span-two{
+    grid-column:span 2;
+}
+
+#display{
+    grid-column: 1/ -1;
+    background-color: rgba(0,0,0,.8);
+    display:flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    flex-direction: column;
+    padding:10px;
+    word-wrap: break-word;
+    word-break: break-all;
+    
+}
+
+#ac,#del,#divide{
+    border-top: 3px solid white;
+}
+
+.current-operand{
+    color: white;
+    font-size: 2rem
+}
+.previous-operand{
+    color: rgba(255,255,255,.6);
+    margin-top: 10px;
+    font-size:1.5rem;
+}
+
+
+
