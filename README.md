@@ -1,1 +1,1 @@
-Access calculator here: 
+Access calculator here: https://zwonx.github.io/jsCalculator/
